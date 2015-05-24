@@ -15,8 +15,8 @@ echo '+-----------------------------+' . PHP_EOL;
 echo '| Example of the progress bar |' . PHP_EOL;
 echo '+-----------------------------+' . PHP_EOL;
 echo 'This demo will demonstrate ' . count($numberOfItems) . ' progress bars.' . PHP_EOL;
-echo 'The current update interval is 1 second.' . PHP_EOL;
 echo 'The number of items will be ' . implode(', ', $numberOfItems) . '.' . PHP_EOL;
+echo 'The current update interval is 1 second.' . PHP_EOL;
 echo PHP_EOL;
 echo 'Press CTRL-C to stop this demonstration.' . PHP_EOL;
 echo PHP_EOL;
@@ -35,7 +35,8 @@ foreach ($numberOfItems as $totalNumberOfItems) {
     $progressBar->setTotalSteps($totalNumberOfItems);
 
     foreach ($items as $key => $item) {
-        $progressBar->update($key);
+        //$progressBar->update($key);
+        $progressBar->forward();
         sleep(1);
     }
 

@@ -28,9 +28,10 @@ class ProgressBar
      */
     public function setTotalSteps($total)
     {
-        $this->totalSteps = (int) $total;
+        $this->totalSteps   = (int) $total;
         $this->calculateNumberOfSteps();
-        $this->isFinished = false;
+        $this->currentStep  = 0;
+        $this->isFinished   = false;
         $this->storeCursorPosition();
     }
 
@@ -57,6 +58,13 @@ class ProgressBar
             $this->resetCursor();
             $this->draw();
         }
+    }
+
+    public function forward()
+    {
+        $next = ($this->initialStepWasZero) ? $this->currentStep : ++$this->currentStep;
+
+        $this->update($next);
     }
 
     private function draw()
