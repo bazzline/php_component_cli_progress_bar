@@ -1,6 +1,6 @@
 # cli progress bar
 
-Basic class to create a cli progress bar.
+This project aims to deliver a easy to use php component for displaying a progress bar in the shell environment.
 
 ## Usage
 
@@ -54,6 +54,7 @@ Press CTRL-C to stop this demonstration
 * add link to scrutinizer.yml
 * add link to packagist (and install howto)
 * add api documentation
+* write [tests](https://github.com/guiguiboy/PHP-CLI-Progress-Bar/blob/master/test/ProgressBar/Test/ManagerTest.php)
 * add formatter
 * add percentage at the beginning that gets calculated and updated on each update call (like wget is doing it)
 * add support to calculate maximum width (based on terminal size) dynamically (`tput cols`?)
