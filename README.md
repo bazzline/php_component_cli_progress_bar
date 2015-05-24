@@ -47,3 +47,4 @@ Press CTRL-C to stop this demonstration
 * add formatter
 * add percentage at the beginning that gets calculated and updated on each update call (like wget is doing it)
 * add support to calculate maximum width (based on terminal size) dynamically (`tput cols`?)
+* add [eta calculation](https://github.com/guiguiboy/PHP-CLI-Progress-Bar/issues/4)
