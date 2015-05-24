@@ -1,4 +1,4 @@
-# cli progress bar
+# Progress Bar for PHP CLI Scripts / Shell Environment
 
 This project aims to deliver a easy to use php component for displaying a progress bar in the shell environment.
 
