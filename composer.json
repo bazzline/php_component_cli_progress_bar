@@ -1,0 +1,24 @@
+{
+    "name": "net_bazzline/php_component_cli_progres_bar",
+    "description": "free as in freedom free software php command line progress bar",
+    "keywords": ["php", "component", "cli", "progress", "bar", "progressbar", "lgpl", "free as in freedom"],
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "license": "LGPLv3",
+    "authors": [
+        {
+            "name": "Stev Leibelt",
+            "email": "artodeto@bazzline.net",
+            "homepage": "https://artodeto.bazzline.net",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Net\\Bazzline\\Component\\Cli\\ProgressBar": "source/"
+        }
+    }
+}
