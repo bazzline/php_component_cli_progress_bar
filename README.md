@@ -45,6 +45,7 @@ Press CTRL-C to stop this demonstration
 ## History
 
 * upcomming
+    * moved to psr-4 autoloading
 * [1.0.0](https://github.com/bazzline/php_component_cli_progress_bar/tree/1.0.0) - released at 24.05.2015
     * initial release
 

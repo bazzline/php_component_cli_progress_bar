@@ -1,7 +1,19 @@
 {
     "name": "net_bazzline/php_component_cli_progres_bar",
     "description": "free as in freedom free software php command line progress bar",
-    "keywords": ["php", "component", "cli", "progress", "bar", "progressbar", "lgpl", "free as in freedom"],
+    "keywords": [
+        "php",
+        "bazzline",
+        "psr",
+        "psr-4",
+        "component",
+        "cli",
+        "progress",
+        "bar",
+        "progressbar",
+        "lgpl",
+        "free as in freedom"
+    ],
     "type": "library",
     "minimum-stability": "dev",
     "require": {
@@ -17,8 +29,8 @@
         }
     ],
     "autoload": {
-        "psr-0": {
-            "Net\\Bazzline\\Component\\Cli\\ProgressBar": "source/"
+        "psr-4": {
+            "Net\\Bazzline\\Component\\Cli\\ProgressBar\\": "source/"
         }
     }
 }
