@@ -7,9 +7,9 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-$numberOfItems = array(
+$numberOfItems = [
     3,6,9,12,150
-);
+];
 
 echo '+-----------------------------+' . PHP_EOL;
 echo '| Example of the progress bar |' . PHP_EOL;
@@ -24,8 +24,8 @@ echo PHP_EOL;
 $progressBar = new \Net\Bazzline\Component\Cli\ProgressBar\ProgressBar();
 
 foreach ($numberOfItems as $totalNumberOfItems) {
-    $items = array();
-    $startTime = microtime(true);
+    $items      = [];
+    $startTime  = microtime(true);
 
     for ($iterator = 0; $iterator < $totalNumberOfItems; ++$iterator) {
         $items[] = $iterator;
